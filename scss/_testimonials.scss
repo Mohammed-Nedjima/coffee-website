@@ -1,0 +1,52 @@
+@import "_variables";
+
+.testimonials {
+  padding-block: $section-padding;
+  background-color: $light-pink;
+
+  .slider-wrapper {
+    overflow: hidden;
+    margin: 0 60px 50px;
+    @media screen and (max-width: $screen-sm) {
+      margin: 0 0 30px;
+    }
+
+    .testimonials-list {
+      padding: 0;
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        align-items: center;
+        text-align: center;
+        .name {
+          font-size: $fs-l;
+          margin-bottom: 1rem;
+        }
+        .user-img {
+          width: 180px;
+          height: 180px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+    .swiper-button {
+      color: $primary;
+      transition: all 0.3s ease;
+      &:hover {
+        color: $secondary;
+      }
+      @media screen and (max-width: $screen-sm) {
+        display: none;
+      }
+    }
+    .swiper-pagination-bullet {
+      background-color: $primary;
+      opacity: 1;
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

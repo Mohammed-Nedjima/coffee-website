@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fast Coffee</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- linking swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- linking font Awsome -->
+    <script
+      src="https://kit.fontawesome.com/536af953bc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#" class="nav-logo">
+            <h2 class="logo-text">☕ Coffee</h2>
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-link">
+              <a href="#home" class="nav-link-item">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#about" class="nav-link-item">About</a>
+            </li>
+            <li class="nav-link">
+              <a href="#menu" class="nav-link-item">Menu</a>
+            </li>
+            <li class="nav-link">
+              <a href="#testimonials" class="nav-link-item">Testimonials</a>
+            </li>
+            <li class="nav-link">
+              <a href="#gallery" class="nav-link-item">Gallery</a>
+            </li>
+            <li class="nav-link">
+              <a href="#contact" class="nav-link-item">Contact</a>
+            </li>
+          </ul>
+          <button id="open-menu-btn" class="fas fa-bars"></button>
+        </nav>
+      </div>
+    </header>
+    <!-- Start header -->
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-text hidden delay">
+          <h1>Best Coffee</h1>
+          <p class="subheader">Make your day great with our special coffee!</p>
+          <p class="description">
+            Welcome to our coffee paradise, where every bean tells a story and
+            every cup sparks joy.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn order">Order Now</a>
+            <a href="" class="btn contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-img hidden">
+          <img src="assets/coffee-hero-section.png" alt="coffee" />
+        </div>
+      </div>
+    </section>
+    <!-- End header -->
+    <!-- Start about -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="img-wrapper hidden">
+          <img src="./assets/about-image.jpg" alt="about" class="about-img" />
+        </div>
+        <div class="about-detailes hidden delay">
+          <h2 class="section-title">About Us</h2>
+          <p class="text">
+            At Coffee House in Berndorf, Germany, we pride ourselves on being a
+            go-to destination for coffee lovers and conversation seekers alike.
+            We're dedicated to providing an exceptional coffee experience in a
+            cozy and inviting atmosphere, where guests can relax, unwind, and
+            enjoy their time in comfort.
+          </p>
+          <ul class="social">
+            <li>
+              <a class="link" href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="link" href="https://www.twitter.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End about -->
+    <!-- Start Menu  -->
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="grid-container">
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/hot-beverages.png" alt="beverages" />
+            </div>
+            <h3 class="title">Hot Beverages</h3>
+            <p class="description">
+              Wide range of Steaming hot coffee to make you fresh and light.
+            </p>
+          </div>
+
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/cold-beverages.png" alt="beverages" />
+            </div>
+            <h3 class="title">Cold Beverages</h3>
+            <p class="description">
+              Creamy and frothy cold coffee to make you cool.
+            </p>
+          </div>
+
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/refreshment.png" alt="beverages" />
+            </div>
+            <h3 class="title">Refreshment</h3>
+            <p class="description">
+              Fruit and icy refreshing drink to make feel refresh.
+            </p>
+          </div>
+
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/special-combo.png" alt="beverages" />
+            </div>
+            <h3 class="title">Special Combos</h3>
+            <p class="description">
+              Your favorite eating and drinking combations.
+            </p>
+          </div>
+
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/desserts.png" alt="beverages" />
+            </div>
+            <h3 class="title">Dessert</h3>
+            <p class="description">
+              Satiate your palate and take you on a culinary treat.
+            </p>
+          </div>
+
+          <div class="grid-item hidden">
+            <div class="img-wrapper">
+              <img src="./assets/burger-frenchfries.png" alt="beverages" />
+            </div>
+            <h3 class="title">Burger & French Fries</h3>
+            <p class="description">
+              Quick bites to satisfy your small size hunger.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Menu  -->
+    <!-- Start testimonial -->
+    <section class="testimonials" id="testimonials">
+      <div class="container hidden">
+        <h2 class="section-title">testimonials</h2>
+        <div class="slider-container swiper">
+          <div class="slider-wrapper">
+            <ul class="testimonials-list swiper-wrapper">
+              <li class="testimonial swiper-slide">
+                <img src="./assets/user-1.jpg" alt="" class="user-img" />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "Loved the French roast. Perfectly balanced and rich. Will
+                  order again!"
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="./assets/user-2.jpg" alt="" class="user-img" />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "Loved the French roast. Perfectly balanced and rich. Will
+                  order again!"
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="./assets/user-3.jpg" alt="" class="user-img" />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "Loved the French roast. Perfectly balanced and rich. Will
+                  order again!"
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="./assets/user-4.jpg" alt="" class="user-img" />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "Loved the French roast. Perfectly balanced and rich. Will
+                  order again!"
+                </p>
+              </li>
+              <li class="testimonial swiper-slide">
+                <img src="./assets/user-5.jpg" alt="" class="user-img" />
+                <h3 class="name">Sarah Johnson</h3>
+                <p class="feedback">
+                  "Loved the French roast. Perfectly balanced and rich. Will
+                  order again!"
+                </p>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev swiper-button"></div>
+            <div class="swiper-button-next swiper-button"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End testimonial -->
+    <!-- Start gallery -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="grid-container">
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-1.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-2.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-3.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-4.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-5.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+          <div class="grid-item hidden">
+            <img
+              src="./assets/gallery-6.jpg"
+              alt="gallery"
+              class="gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End gallery -->
+    <!-- Start contact -->
+    <section class="contact" id="contact">
+      <h2 class="section-title hidden">Contact Us</h2>
+      <div class="container">
+        <ul class="contact-list hidden">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <p>1234 Coffee House, Berndorf, Germany</p>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <p>+123 456 7890</p>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <p>info@coffeeshop.com</p>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Saturday: 10:00 AM - 3:00 PM</p>
+          </li>
+          <li>
+            <i class="fa-regular fa-clock"></i>
+            <p>Sunday: Closed</p>
+          </li>
+          <li>
+            <i class="fas fa-globe"></i>
+            <p>www.coffeeshop.com</p>
+          </li>
+        </ul>
+        <form action="" class="contact-form" id="contact-form" novalidate>
+          <div class="input-field hidden delay" aria-invalid="false">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your name"
+              autocomplete="off"
+              required
+            />
+            <p class="error-message">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Please enter a valid name (at least 3 characters).
+            </p>
+          </div>
+          <div class="input-field hidden midium-delay" aria-invalid="false">
+            <input
+              type="email"
+              id="email"
+              placeholder="Your email"
+              autocomplete="off"
+              required
+            />
+            <p class="error-message">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Please enter a valid email.
+            </p>
+          </div>
+
+          <div class="input-field hidden long-delay" aria-invalid="false">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Your message"
+              autocomplete="off"
+              required
+            ></textarea>
+            <p class="error-message">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Please enter a message (at least 10 characters).
+            </p>
+          </div>
+
+          <button
+            type="submit"
+            class="submit-btn hidden long-delay"
+            id="submit-btn"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- End contact -->
+    <!-- Start footer -->
+    <footer>
+      <div class="container">
+        <p class="footer-text">Unofficial website for educational purpose.</p>
+        <ul class="social">
+          <li>
+            <a href="https://github.com/Mohammed-Nedjima" class="footer-link">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/mohammed-ayoub-nedjima/"
+              class="footer-link"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

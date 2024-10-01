@@ -1,0 +1,29 @@
+@import "_variables";
+
+.menu {
+  padding-block: $section-padding;
+  background-color: $dark;
+  color: $white;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 7rem;
+
+    .grid-item {
+      text-align: center;
+      .title {
+        font-size: $fs-l;
+        margin-block: 2rem 1rem;
+      }
+      .decription {
+        font-size: $fs-m;
+      }
+      .img-wrapper {
+        width: 250px;
+        height: 250px;
+        margin-inline: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+// variables
+
+$ff-normal: "Poppins", sans-serif;
+$ff-accent: "Miniver", sans-serif;
+
+$primary: #f3961c;
+$secondary: #3b141c;
+$dark: #252525;
+$light-pink: #faf4f5;
+$medium-gray: #ccc;
+$white: #fff;
+$black: #000;
+$warning: #f44336;
+
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-semi-bold: 600;
+$fw-bold: 700;
+
+$fs-s: 0.9rem;
+$fs-n: 1rem;
+$fs-m: 1.12rem;
+$fs-l: 1.5rem;
+$fs-xl: 2rem;
+$fs-xxl: 2.3rem;
+
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1200px;
+$screen-xl: 1440px;
+
+$rounded-s: 8px;
+$rounded-m: 30px;
+$rounded-full: 50%;
+
+$section-padding: 50px 80px;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin box-shadow($x: 0, $y: 0, $blur: 10px, $color: rgba(0, 0, 0, 0.1)) {
+  box-shadow: $x $y $blur $color;
+}
+.container {
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 15px;
+
+  @media (min-width: $screen-sm) {
+    max-width: 750px;
+  }
+  @media (min-width: $screen-sm) {
+    max-width: 970px;
+  }
+  @media (min-width: $screen-lg) {
+    max-width: 1150px;
+  }
+  @media (min-width: $screen-xl) {
+    max-width: 1380px;
+  }
+}
+
+.section-title {
+  font-size: $fs-xl;
+  font-weight: $fw-semi-bold;
+  padding: 60px 0 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: $primary;
+  margin: 5px auto 0;
+  border-radius: $rounded-s;
+}

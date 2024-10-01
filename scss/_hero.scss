@@ -1,0 +1,86 @@
+@import "_variables";
+
+.hero {
+  background-color: $secondary;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-block-start: 4rem;
+
+  .container {
+    @include flex-between;
+    .hero-text {
+      max-width: 600px;
+      h1 {
+        font-size: $fs-xxl;
+        font-family: $ff-accent;
+        color: $primary;
+        font-weight: $fw-bold;
+        margin-block-end: 0.5rem;
+      }
+      .subheader {
+        font-size: $fs-xxl;
+        font-weight: $fw-medium;
+        margin-block-end: 1.5rem;
+      }
+      .description {
+        font-size: $fs-m;
+        margin-block-end: $fs-l;
+        margin-block-end: 2rem;
+      }
+      .buttons {
+        display: flex;
+        gap: 1.5rem;
+        .btn {
+          padding: 0.75rem 1rem;
+          border-radius: $rounded-m;
+          font-weight: $fw-medium;
+          font-size: $fs-m;
+          transition: all 0.3s ease-in-out;
+        }
+        .order {
+          background-color: $primary;
+          color: $black;
+          border: 2px solid $primary;
+          &:hover {
+            background-color: $secondary;
+            color: white;
+            border: 2px solid $white;
+          }
+        }
+        .contact {
+          background-color: $secondary;
+          color: $white;
+          border: 2px solid $white;
+          &:hover {
+            background-color: $primary;
+            color: $black;
+            border: 2px solid $primary;
+          }
+        }
+      }
+    }
+
+    .hero-img {
+      img {
+        max-width: 450px;
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column-reverse;
+      padding-block: 30px;
+      gap: 3rem;
+      padding-inline: 1rem;
+      .hero-text {
+        text-align: center;
+      }
+      .buttons {
+        justify-content: center;
+      }
+      .hero-img img {
+        max-width: 270px;
+      }
+    }
+  }
+}

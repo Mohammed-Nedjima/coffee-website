@@ -1,0 +1,35 @@
+@import "_variables";
+
+.gallery {
+  background: $dark;
+  color: white;
+  padding-block: $section-padding;
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    gap: 2.5rem;
+    .grid-item {
+      overflow: hidden;
+      border-radius: $rounded-s;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      .gallery-img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-sm) {
+    .grid-container {
+      grid-template-columns: repeat(2, minmax(250px, 1fr));
+    }
+  }
+  @media (min-width: $screen-lg) {
+    .grid-container {
+      grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+  }
+}

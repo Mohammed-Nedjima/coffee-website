@@ -1,0 +1,57 @@
+@import "_variables";
+
+.about {
+  padding-block: 80px;
+  background-color: $light-pink;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+
+    .img-wrapper {
+      .about-img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+    .about-detailes {
+      max-width: 50%;
+      .section-title {
+        padding: 0;
+      }
+      .text {
+        line-height: 2rem;
+        margin: 50px 0 30px;
+        text-align: center;
+        font-size: $fs-m;
+      }
+      .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        a {
+          font-size: $fs-xl;
+          transition: all 0.3s ease;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 900px) {
+      flex-direction: column-reverse;
+      gap: 3rem;
+      .img-wrapper {
+        .about-img {
+          aspect-ratio: 1;
+          height: 250px;
+          width: 250px;
+        }
+      }
+    }
+  }
+}

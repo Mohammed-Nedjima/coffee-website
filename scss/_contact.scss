@@ -1,0 +1,94 @@
+@import "_variables";
+
+.contact {
+  padding-block: $section-padding;
+  background-color: $light-pink;
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+
+    .contact-list {
+      padding: 0;
+      li {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+    .contact-form {
+      width: 50%;
+
+      .input-field {
+        margin-bottom: 1rem;
+        input,
+        textarea {
+          background: $white;
+          display: block;
+          outline: none;
+          border: 1px solid $medium-gray;
+          border-radius: $rounded-s;
+          width: 100%;
+          padding: 0.6rem 0.75rem;
+
+          &:focus {
+            border-color: $primary;
+            border-width: 2px;
+          }
+        }
+        textarea {
+          resize: vertical;
+          height: 100px;
+        }
+        .error-message {
+          display: none;
+          color: $warning;
+          font-size: $fs-s;
+          margin-top: 0.25rem;
+          padding-left: 0.5rem;
+        }
+        &[aria-invalid="true"] {
+          input,
+          textarea {
+            border-color: $warning;
+          }
+          .error-message {
+            display: block;
+          }
+        }
+      }
+
+      .submit-btn {
+        display: block;
+        background-color: $secondary;
+        color: $white;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        transition: all 0.3s ease-in-out;
+        border-radius: $rounded-m;
+        border: 1px solid $secondary;
+        font-size: $fs-m;
+        &:hover {
+          background-color: $light-pink;
+          color: $black;
+        }
+      }
+    }
+    @media (max-width: $screen-sm) {
+      flex-direction: column-reverse;
+      align-items: center;
+      .contact-list {
+        text-align: center;
+      }
+      .contact-form {
+        width: 100%;
+        align-items: center;
+        .submit-btn {
+          margin-inline: auto;
+        }
+      }
+    }
+  }
+}

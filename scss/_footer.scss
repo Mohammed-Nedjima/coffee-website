@@ -1,0 +1,25 @@
+@import "_variables";
+
+footer {
+  background-color: $dark;
+  color: $white;
+  padding-block: 1.5rem;
+  .container {
+    @include flex-between;
+    .footer-text {
+      font-size: $fs-m;
+      font-weight: $fw-medium;
+    }
+    .social {
+      display: flex;
+      gap: 1rem;
+      a {
+        font-size: $fs-l;
+        transition: all 0.3s ease;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
