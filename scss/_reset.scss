@@ -99,8 +99,14 @@ button {
   transition-delay: 200ms;
 }
 .medium-delay {
-  transition-delay: 225ms;
+  transition-delay: 215ms;
 }
 .long-delay {
-  transition-delay: 250ms;
+  transition-delay: 230ms;
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
